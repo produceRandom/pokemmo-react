@@ -2,6 +2,9 @@
 import React from 'react';
 import Loadable from 'react-loadable'
 import list from '@/pages/pokemon/list'
+import {
+    Redirect,
+} from "react-router-dom";
 const routes = [
 
     {
@@ -15,6 +18,16 @@ const routes = [
             loader: () => import("@/pages/pokemon/detail"),
             loading: () => <div />
         })
+    },    
+    {
+        path:'/',
+        component:()=>{
+            return <Redirect
+                to={{
+                    pathname: "/pokemon/list"
+                }}
+            />
+        }
     },    
     {
         path:'*',

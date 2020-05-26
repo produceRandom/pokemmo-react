@@ -18,7 +18,6 @@ function App() {
                     <RouteWithSubRoutes key={i} {...route} ></RouteWithSubRoutes>
                 ))}  
             </Switch>
- 
         </Router>
    
     </div>
