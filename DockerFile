@@ -3,6 +3,7 @@ RUN apt-get update \
     && apt-get install -y nginx
 COPY . /app/		
 WORKDIR /app
+COPY nginx/nginx.conf /etc/nginx/conf.d
 EXPOSE 80
 RUN  npm install \     
      && npm run build \
