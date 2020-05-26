@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "esnext",
+        "target": "es5",
+        "jsx": "react",
+        "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+        ],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "baseUrl": "src",
+        "paths": {
+            "@/utils/*": [
+                "src/utils/*"
+            ],
+            "@/rewrite/*": [
+                "src/rewrite/*"
+            ],
+            "@/*": [
+                "src/*"
+            ],
+        }        
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules" // 这个目录下的代码不会被 typescript 处理
+    ]
+}

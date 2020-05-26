@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@/utils/*": [
+                "src/utils/*"
+            ],
+            "@/rewrite/*": [
+                "src/rewrite/*"
+            ],
+            "@/config/*": [
+                "src/config/*"
+            ],
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "kid58"
+    ]
+}

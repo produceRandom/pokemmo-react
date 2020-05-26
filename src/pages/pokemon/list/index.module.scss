@@ -1,0 +1,123 @@
+/* miniprogram/pages/pokemon/list/list.wxss */
+/* @import '/pages/distribution/list/list.wxss'; */
+body{
+    font-size: .26rem;
+}
+.header{
+    display: flex;
+    background: #fff;
+    padding: 0 15px;
+    height: 44px;
+    line-height: 32px;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 5
+        
+}
+
+.header >div{
+    align-self: center;
+    white-space: nowrap
+}
+.header-search{
+    flex: auto;
+    position: relative;
+    font-size: .28rem;
+}
+.header-search .icon{
+    position: absolute;
+    left: 10px;
+    color:#ccc;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.header-search input{
+    background: rgb(248,248,248);
+    width: 100%;
+    height: 32px;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 30px;
+    border-radius: 10px;
+
+}
+.search-btn{
+    margin-left: 20px;
+    font-size: .28rem;
+}
+.mr20{
+    margin-right: 20px
+}
+
+.card-container{
+    /* width: 6.90rem; */
+
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 15px 15px;
+    background: #dce8ff;
+    background: #fff;
+    /* box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2); */
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    z-index: 2;
+}
+.card-container::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    transform: scaleY(0.5)
+}
+.card-img-wrapper{
+    z-index: 2;
+    position: relative;
+    width: 35%;
+    flex: 1;
+    text-align: center
+}
+.card-img-wrapper img{
+    width: 1.60rem;
+    height: 1.60rem
+}
+.card-cell{
+
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+
+
+.card-cell .title,.card-cell .desc{
+    background: #fff;
+    line-height: 25px;
+    
+    color: #002a4e
+}
+.card-cell .title{
+    display: inline-block;
+    text-align: justify;
+    text-align-last: justify;
+    width: 1.00rem;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding:0 10px;
+}
+.card-cell .desc{
+    text-align: left;
+    width: 2.00rem;
+
+    padding:0 10px;
+    border-radius: 5px
+}
