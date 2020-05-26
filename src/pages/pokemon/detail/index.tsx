@@ -7,7 +7,8 @@ export class detail extends baseComponent {
          * 详情
          */
         pokemonDetail: {
-            name_cn:''
+            name_cn:'',
+            id:''
         }
     }
     constructor(){
@@ -16,6 +17,7 @@ export class detail extends baseComponent {
     render() {
         return (
             <div>
+                编号：{this.state.pokemonDetail.id}
                 名字：{this.state.pokemonDetail.name_cn}
             </div>
         );
