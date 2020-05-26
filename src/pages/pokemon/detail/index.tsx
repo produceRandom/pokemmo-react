@@ -16,7 +16,7 @@ export class detail extends baseComponent {
     render() {
         return (
             <div>
-                {this.state.pokemonDetail.name_cn}
+                名字：{this.state.pokemonDetail.name_cn}
             </div>
         );
     }
